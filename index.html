@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iloncha O'yini</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🐍 Iloncha O'yini</h1>
+
+  <div class="controls">
+    <label for="speed">Tezlik: </label>
+    <select id="speed">
+      <option value="200">Past</option>
+      <option value="120" selected>O‘rta</option>
+      <option value="60">Tez</option>
+    </select>
+    <button onclick="restartGame()">🔄 Qaytadan boshlash</button>
+    <button onclick="togglePause()" id="pauseBtn">⏸ Pauza</button>
+  </div>
+
+  <canvas id="gameCanvas" width="1200" height="600"></canvas>
+
+  <p>⬅️ ⬆️ ⬇️ ➡️ tugmalari bilan boshqaring</p>
+
+  <div id="scoreDisplay">Ball: 0</div>
+  <div id="warningBox"></div>
+
+  <audio id="beepSound">
+    <source src="https://actions.google.com/sounds/v1/alarms/beep_short.ogg" type="audio/ogg" />
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>

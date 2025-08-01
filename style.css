@@ -1,0 +1,38 @@
+body {
+  text-align: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+canvas {
+  background-color: #000;
+  border: 2px solid #fff;
+  margin-top: 10px;
+}
+
+.controls {
+  margin: 10px 0;
+}
+
+select, button {
+  padding: 6px 12px;
+  font-size: 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#scoreDisplay {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+#warningBox {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: yellow;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+}
